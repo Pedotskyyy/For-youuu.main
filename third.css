@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+    background-color: #333;
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    background-image: url(night-sky.jpg);
+    backdrop-filter: blur(2px);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.div-1 {
+    font-size: 15px;
+    font-family: monospace;
+    list-style-type: none;
+    color: green;
+    overflow: hidden;
+    width: 100ch;
+  animation: typing 5s steps(55), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 17px;
+}
+
+
+.a-1 {
+    text-decoration: none;
+    font-style: bold;
+    color: green;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
